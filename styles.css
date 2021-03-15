@@ -22,6 +22,14 @@
   box-shadow: 0 15px 35px 0 rgba(42,51,83,.12),0 5px 15px rgba(0,0,0,.06);
 }
 
+.boomers .project-tile {
+  border-radius: 0;
+  box-shadow: none;
+  border-style: ridge;
+  border-width: 6px;
+  padding:0;
+}
+
 .project-tile h3 {
   margin-bottom:5px;
 }
@@ -49,6 +57,12 @@
   padding:0 10px;
 }
 
+.boomers .accessibility {
+  border-radius: 0;
+  border: 3px solid black;
+  background-color: gray;
+}
+
 .accessibility > div {
   display:flex; height:100%;width:100%;align-items:center;justify-content: space-evenly;
 }
@@ -68,9 +82,19 @@ h1 {
   margin: 0 10px;
   align-items: center;
 }
+
+.boomers .tech-item {
+  width: 90px;
+}
+
 .tech-item img {
   height:24px;
   filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.3));
+}
+
+.boomers .tech-item img {
+  image-rendering: pixelated;
+  filter: grayscale();
 }
 
 .tech-item p {
@@ -101,8 +125,27 @@ h1 {
   background-size: contain;
 }
 
+.boomers .profile {
+  background-image:none;
+  background-color:white;
+  background-image: url('images/boomers-background-2.jpg');
+  background-size:auto;
+}
+
+.boomers .profile * {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.boomers .profile h1 {
+  color: li
+}
+
 .profile * { /* FIX: * key selector is not performant */
   color:white;
+}
+
+.boomers .profile * { /* FIX: * key selector is not performant */
+  color: black;
 }
 
 .projects {
@@ -110,6 +153,11 @@ h1 {
   width: calc(100% - 430px);
   margin-left: 430px; /* FIX: consider if this is the best way */
   background-color: #f3f7f9;
+}
+
+.boomers .projects {
+  background-color: white;
+  background-image: url('./images/boomers-background-1.gif');
 }
 
 .section-title {
@@ -169,6 +217,47 @@ h1 {
   left:-22px;
 }
 
+.project-links a:hover {
+  color: #1c537f;
+  text-decoration: underline;
+}
+
+.accessibility-mode {
+  font-weight:normal;
+  color:gray;
+  cursor: pointer;
+}
+
+.boomers .accessibility-mode {
+    text-decoration: underline;
+    color: #0000ee;
+}
+
+.accessibility-mode:hover {
+  color:black;
+}
+
+.australians {
+  transform: rotate(180deg);
+  transition: transform 1s ease-out;
+}
+
+.boomers * {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+:not(.boomers) .boomers-only {
+  display:none;
+}
+
+.boomers .boomers-only {
+  display: inline-block;
+}
+
+.boomers .boomers-not {
+  display:none;
+}
+
 * {
   box-sizing:border-box;
   font-family: 'Karla', sans-serif;
@@ -184,6 +273,21 @@ ul {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+a:link {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+a:visited {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+.boomers a {
+  text-decoration: underline;
+  color: #0000ee;
 }
 
 ::-webkit-scrollbar {
