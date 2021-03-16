@@ -319,6 +319,40 @@ a:visited {
   color: #0000ee;
 }
 
+.pop-up {
+  background-color:white;
+  padding:20px;
+  border-radius:20px;
+  position:absolute;
+  left:10%;
+  top:32%;
+  z-index:2;
+  max-width:300px;
+  border: 2px solid silver;
+  box-shadow: 0 15px 15px 0 rgba(42,51,83,.72);
+  text-align:center;
+  display:none;
+}
+
+.eu-regulators .pop-up {
+  display:block;
+  animation:grow 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.pop-up-button {
+  padding:5px 10px;
+  background-color:#5978f3;
+  outline:none;
+  color:white;
+  border:none;
+  border-radius:5px;
+  font-size:1em;
+  cursor:pointer;
+}
+
+.pop-up-button:hover {
+  background-color: #6f8bfb;
+}
+
 ::-webkit-scrollbar {
   width: 18px;
   background: #f3f7f9;
