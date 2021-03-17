@@ -324,8 +324,6 @@ a:visited {
   padding:20px;
   border-radius:20px;
   position:absolute;
-  left:10%;
-  top:32%;
   z-index:2;
   max-width:300px;
   border: 2px solid silver;
@@ -334,10 +332,37 @@ a:visited {
   display:none;
 }
 
-.eu-regulators .pop-up {
+.eu-regulators .pop-up.pop-up-1.shown {
+  left:10%;
+  top:32%;
+}
+.eu-regulators .pop-up.pop-up-2.shown {
+  left:32%;
+  top:5%;
+  animation-delay:0.3s;
+}
+.eu-regulators .pop-up.pop-up-3.shown {
+  left:66%;
+  top:15%;
+  animation-delay:0.5s;
+}
+.eu-regulators .pop-up.pop-up-4.shown {
+  right:10%;
+  top:71%;
+  animation-delay:0.24s;
+}
+.eu-regulators .pop-up.pop-up-5.shown {
+  left:40%;
+  top:53%;
+  animation-delay:0.1s;
+}
+
+.eu-regulators .pop-up.shown {
   display:block;
   animation:grow 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  animation-fill-mode: backwards;
 }
+
 .pop-up-button {
   padding:5px 10px;
   background-color:#5978f3;
