@@ -251,9 +251,13 @@ h1 {
   left:-22px;
 }
 
-.project-links a:hover {
+.project-links a[href]:hover {
   color: #1c537f;
   text-decoration: underline;
+}
+
+.project-links a:not([href]) {
+  color: lightgray;
 }
 
 .accessibility-mode {
