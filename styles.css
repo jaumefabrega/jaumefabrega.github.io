@@ -257,6 +257,15 @@ h1 {
   cursor: pointer;
 }
 
+.australians .accessibility-mode[data-mode=australians],
+.boomers .accessibility-mode[data-mode=boomers],
+.hr-recruiters .accessibility-mode[data-mode=hr-recruiters],
+.lawyers .accessibility-mode[data-mode=lawyers],
+.none .accessibility-mode[data-mode=none] {
+  color: black;
+  font-weight:bold;
+}
+
 .boomers .accessibility-mode {
     text-decoration: underline;
     color: #0000ee;
@@ -332,32 +341,36 @@ a:visited {
   display:none;
 }
 
-.eu-regulators .pop-up.pop-up-1.shown {
+.lawyers .pop-up.pop-up-1.shown {
   left:10%;
   top:32%;
 }
-.eu-regulators .pop-up.pop-up-2.shown {
+
+.lawyers .pop-up.pop-up-2.shown {
   left:32%;
   top:5%;
   animation-delay:0.3s;
 }
-.eu-regulators .pop-up.pop-up-3.shown {
+
+.lawyers .pop-up.pop-up-3.shown {
   left:66%;
   top:15%;
   animation-delay:0.5s;
 }
-.eu-regulators .pop-up.pop-up-4.shown {
+
+.lawyers .pop-up.pop-up-4.shown {
   right:10%;
   top:71%;
   animation-delay:0.24s;
 }
-.eu-regulators .pop-up.pop-up-5.shown {
+
+.lawyers .pop-up.pop-up-5.shown {
   left:40%;
   top:53%;
   animation-delay:0.1s;
 }
 
-.eu-regulators .pop-up.shown {
+.lawyers .pop-up.shown {
   display:block;
   animation:grow 1s cubic-bezier(0.165, 0.84, 0.44, 1);
   animation-fill-mode: backwards;
