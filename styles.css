@@ -41,6 +41,7 @@
   width:100%;
 }
 
+
 .project-tile {
   width:400px;
   height:300px;
@@ -54,6 +55,35 @@
   background-color:white;
   border-radius: 30px;
   box-shadow: 0 15px 35px 0 rgba(42,51,83,.12),0 5px 15px rgba(0,0,0,.06);
+}
+
+.project-tile {
+  background-size: contain;
+  background-repeat:no-repeat
+}
+
+.project-tile.quick-quotes {
+  background-image:url('images/hero-quick-quotes.jpg');
+}
+
+.project-tile.notifyco {
+  background-image:url('images/hero-notifyco.jpg');
+}
+
+.project-tile.togalt {
+  background-image:url('images/hero-togalt.jpg');
+}
+
+.project-tile.hero-write-like-them {
+  background-image:url('images/hero-write-like-them.jpg');
+}
+
+.project-tile.productivity-at-work {
+  background-image:url('images/hero-productivity-at-work.jpg');
+}
+
+.project-tile.portfolio-page {
+  background-image:url('images/hero-portfolio-page.jpg');
 }
 
 .boomers .project-tile {
