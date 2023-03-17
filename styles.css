@@ -62,6 +62,14 @@
   background-repeat: no-repeat;
 }
 
+.project-tile.eleven-kms {
+  background-image: url("images/hero-eleven-kms.jpg");
+}
+
+.project-tile.castillos-hinchables {
+  background-image: url("images/hero-castillos-hinchables.jpg");
+}
+
 .project-tile.quick-quotes {
   background-image: url("images/hero-quick-quotes.jpg");
 }
